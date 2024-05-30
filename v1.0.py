@@ -1,48 +1,42 @@
-import argparse
 import json
-from farmbot import Farmbot, StubHandler
+from farmbot import Farmbot, FarmbotToken
 
-# Define a custom handler to save photos
-class PhotoHandler(StubHandler):
+# Load credentials from a JSON file
+with open("credentials.json", "r") as f:
+    creds = json.load(f)
+    email = creds["email"]
+    password = creds["password"]
+    server = creds["server"]
+
+# Download token and create FarmBot instance
+raw_token = FarmbotToken.download_token(email, password, server)
+fb = Farmbot(raw_token)
+
+# Load plant coordinates from a JSON file
+with open("plant_coords.json", "r") as f:
+    plant_coords = json.load(f)
+
+class MyHandler:
+    def on_connect(self, bot, mqtt_client):
+        for plant in plant_coords:
+            x, y, z = plant["x"], plant["y"], plant["z"]
+            request_id = bot.move_absolute(x, y, z)
+            print(f"Moving to plant at ({x}, {y}, {z}). Request ID: {request_id}")
+            request_id = bot.take_photo()
+            print(f"Taking photo. Request ID: {request_id}")
+
+    def on_change(self, bot, state):
+        pass
+
+    def on_log(self, bot, log):
+        print(f"Log: {log['message']}")
+
     def on_response(self, bot, response):
-        if isinstance(response, OkResponse):
-            print(f"Photo taken successfully at {response.id}")
+        print(f"Successful request: {response.id}")
 
     def on_error(self, bot, response):
-        print(f"Error occurred: {response.errors}")
+        print(f"Failed request: {response.id}, Errors: {response.errors}")
 
-# Function to read plant locations from a file
-def read_locations(file_path):
-    with open(file_path, 'r') as file:
-        locations = json.load(file)
-    return locations
-
-# Function to move to each location and take a photo
-def take_photos(farmbot, locations):
-    handler = PhotoHandler()
-    farmbot.connect(handler)
-    for loc in locations:
-        x, y, z = loc['x'], loc['y'], loc['z']
-        farmbot.move_absolute(x, y, z)
-        farmbot.take_photo()
-    farmbot.disconnect()
-
-# Main function to handle command-line arguments
-def main():
-    parser = argparse.ArgumentParser(description='Move FarmBot to each plant location and take a photo.')
-    parser.add_argument('email', type=str, help='Email for FarmBot login')
-    parser.add_argument('password', type=str, help='Password for FarmBot login')
-    parser.add_argument('locations_file', type=str, help='Path to the JSON file containing plant locations')
-    args = parser.parse_args()
-
-    # Login to FarmBot
-    farmbot = Farmbot.login(email=args.email, password=args.password)
-    
-    # Read locations from file
-    locations = read_locations(args.locations_file)
-    
-    # Take photos at each location
-    take_photos(farmbot, locations)
-
-if __name__ == '__main__':
-    main()
+# Connect to FarmBot with the custom handler
+handler = MyHandler()
+fb.connect(handler)
