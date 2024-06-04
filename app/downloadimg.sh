@@ -14,6 +14,11 @@ curl -H "Authorization: Bearer ${TOKEN}" https://my.farm.bot/api/images | \
   while IFS= read -r url; do
     # Extract the image file name from the URL
     filename=$(basename "${url}")
-    # Download the image and save it with the correct extension
-    curl -o "downloaded_images/${filename}.jpeg" -J -L -f "${url}"
+    # Check if the file already exists in the folder
+    if [ ! -f "downloaded_images/${filename}.jpeg" ]; then
+      # Download the image and save it with the correct extension
+      curl -o "downloaded_images/${filename}.jpeg" -J -L -f "${url}"
+    else
+      echo "File ${filename}.jpeg already exists, skipping download."
+    fi
   done
