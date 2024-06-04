@@ -20,6 +20,6 @@ if __name__ == "__main__":
 
         p = multiprocessing.Process(target=run, args=[creds, location, "photo"])
         p.start()
-        time.sleep(10)
+        time.sleep(15)
         p.terminate()
         print(f"process terminated {location}")

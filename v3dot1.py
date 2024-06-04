@@ -8,7 +8,6 @@ class MyMoveHandler:
             x, y, z = plant["x"], plant["y"], plant["z"]
             request_id = bot.move_absolute(x, y, z)
             print(f"Moving to plant at ({x}, {y}, {z}). Request ID: {request_id}")
-            time.sleep(10)
 
 
     def on_change(self, bot, state):
@@ -27,7 +26,6 @@ class MyPhotoHandler:
     def on_connect(self, bot, mqtt_client):
         request_id = bot.take_photo()
         print(f"Taking photo. Request ID: {request_id}")
-        time.sleep(10)
 
 
     def on_change(self, bot, state):
