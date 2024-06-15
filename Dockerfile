@@ -5,7 +5,7 @@ RUN apt-get update && apt-get -y install cron
 WORKDIR /app
 COPY ./app /app
 
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 RUN chmod +x /app/downlatestimg.sh
 
