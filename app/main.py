@@ -6,12 +6,12 @@ from datetime import datetime
 from contextlib import redirect_stdout
 
 # Configure logging
-log_filename = "farmbot_run.log"
+log_filename = "./farmbot_run.log"
 logging.basicConfig(filename=log_filename, level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Load plant coordinates from a JSON file
-with open("locations.json", "r") as f:
+with open("./locations.json", "r") as f:
     PLANTCOORDINATES = json.load(f)
 
 def logged_run(creds, location, action):
@@ -29,7 +29,7 @@ def run_with_timeout(target, args, timeout):
         p.join()
 
 if __name__ == "__main__":
-    creds = "credentials.json"
+    creds = "./credentials.json"
     
     logging.info("Starting plant photography process")
 
