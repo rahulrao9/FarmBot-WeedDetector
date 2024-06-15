@@ -4,6 +4,7 @@ RUN apt-get update && apt-get -y install cron
 
 WORKDIR /app
 COPY ./app /app
+COPY ./requirements.txt /app/
 
 RUN pip3 install -r requirements.txt
 
