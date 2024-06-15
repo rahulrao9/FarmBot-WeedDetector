@@ -1,5 +1,4 @@
 import json
-import time
 from farmbot import Farmbot, FarmbotToken
 
 class MyMoveHandler:
