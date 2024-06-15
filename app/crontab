@@ -1,3 +1,1 @@
-* * * * * /usr/local/bin/python /app/main.py >> /app/app.log 2>&1
-* * * * * /app/downlatestimg.sh >> /app/app.log 2>&1
-* * * * * /usr/local/bin/python /app/driveUploader.py
+* * * * /app/run_daily_tasks.sh

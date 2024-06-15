@@ -19,7 +19,7 @@ def main():
         creds = authenticate()
         service = build('drive', 'v3', credentials=creds)
 
-        items_to_upload = ['app.log', 'downloaded_images', 'farmbot_run.log']
+        items_to_upload = ['app.log', 'downloaded_images', 'farmbot_run.log', 'daily_tasks.log']
 
         for item in items_to_upload:
             upload_or_update(service, item, PARENT_FOLDER_ID)

@@ -1,5 +1,4 @@
-# STEP ZERO: Install Curl, JQ
-sudo apt-get install curl jq --yes
+#!/bin/bash
 
 # STEP ONE: Extract "token.encoded" from auth token:
 TOKEN=$(curl -H "Content-Type: application/json" \
