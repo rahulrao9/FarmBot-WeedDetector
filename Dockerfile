@@ -11,7 +11,7 @@ RUN chmod +x /app/downlatestimg.sh
 
 # CRONJOB
 RUN touch /var/log/cron.log
-COPY crontab /etc/cron.d/crontab
+COPY ./app/crontab /etc/cron.d/crontab
 RUN chmod 0644 /etc/cron.d/crontab
 RUN crontab /etc/cron.d/crontab
 CMD cron && tail -f /var/log/cron.log
