@@ -1,0 +1,58 @@
+2024-08-25 15:45:07,431 - INFO - Starting plant photography process
+2024-08-25 15:45:07,431 - INFO - Processing location: {'x': 450, 'y': 960, 'z': 0}
+2024-08-25 15:45:07,431 - INFO - Starting move action for {'x': 450, 'y': 960, 'z': 0}
+2024-08-25 15:45:22,450 - WARNING - Process timed out for {'x': 450, 'y': 960, 'z': 0} with action move
+2024-08-25 15:45:22,457 - INFO - Move action completed for {'x': 450, 'y': 960, 'z': 0}
+2024-08-25 15:45:22,457 - INFO - Starting photo action for {'x': 450, 'y': 960, 'z': 0}
+2024-08-25 15:45:37,476 - WARNING - Process timed out for {'x': 450, 'y': 960, 'z': 0} with action photo
+2024-08-25 15:45:37,490 - INFO - Photo action completed for {'x': 450, 'y': 960, 'z': 0}
+2024-08-25 15:45:37,490 - INFO - Processing location: {'x': 770, 'y': 690, 'z': 0}
+2024-08-25 15:45:37,490 - INFO - Starting move action for {'x': 770, 'y': 690, 'z': 0}
+2024-08-25 15:45:52,502 - WARNING - Process timed out for {'x': 770, 'y': 690, 'z': 0} with action move
+2024-08-25 15:45:52,502 - INFO - Move action completed for {'x': 770, 'y': 690, 'z': 0}
+2024-08-25 15:45:52,502 - INFO - Starting photo action for {'x': 770, 'y': 690, 'z': 0}
+2024-08-25 15:46:07,528 - WARNING - Process timed out for {'x': 770, 'y': 690, 'z': 0} with action photo
+2024-08-25 15:46:07,532 - INFO - Photo action completed for {'x': 770, 'y': 690, 'z': 0}
+2024-08-25 15:46:07,532 - INFO - Processing location: {'x': 890, 'y': 1120, 'z': 0}
+2024-08-25 15:46:07,532 - INFO - Starting move action for {'x': 890, 'y': 1120, 'z': 0}
+2024-08-25 15:46:22,539 - WARNING - Process timed out for {'x': 890, 'y': 1120, 'z': 0} with action move
+2024-08-25 15:46:22,547 - INFO - Move action completed for {'x': 890, 'y': 1120, 'z': 0}
+2024-08-25 15:46:22,547 - INFO - Starting photo action for {'x': 890, 'y': 1120, 'z': 0}
+2024-08-25 15:46:37,574 - WARNING - Process timed out for {'x': 890, 'y': 1120, 'z': 0} with action photo
+2024-08-25 15:46:37,580 - INFO - Photo action completed for {'x': 890, 'y': 1120, 'z': 0}
+2024-08-25 15:46:37,580 - INFO - Processing location: {'x': 500, 'y': 150, 'z': 0}
+2024-08-25 15:46:37,580 - INFO - Starting move action for {'x': 500, 'y': 150, 'z': 0}
+2024-08-25 15:46:52,606 - WARNING - Process timed out for {'x': 500, 'y': 150, 'z': 0} with action move
+2024-08-25 15:46:52,614 - INFO - Move action completed for {'x': 500, 'y': 150, 'z': 0}
+2024-08-25 15:46:52,614 - INFO - Starting photo action for {'x': 500, 'y': 150, 'z': 0}
+2024-08-25 15:47:07,633 - WARNING - Process timed out for {'x': 500, 'y': 150, 'z': 0} with action photo
+2024-08-25 15:47:07,634 - INFO - Photo action completed for {'x': 500, 'y': 150, 'z': 0}
+2024-08-25 15:47:07,634 - INFO - Processing location: {'x': 1100, 'y': 200, 'z': 0}
+2024-08-25 15:47:07,634 - INFO - Starting move action for {'x': 1100, 'y': 200, 'z': 0}
+2024-08-25 15:47:22,650 - WARNING - Process timed out for {'x': 1100, 'y': 200, 'z': 0} with action move
+2024-08-25 15:47:22,652 - INFO - Move action completed for {'x': 1100, 'y': 200, 'z': 0}
+2024-08-25 15:47:22,652 - INFO - Starting photo action for {'x': 1100, 'y': 200, 'z': 0}
+2024-08-25 15:47:37,652 - WARNING - Process timed out for {'x': 1100, 'y': 200, 'z': 0} with action photo
+2024-08-25 15:47:37,663 - INFO - Photo action completed for {'x': 1100, 'y': 200, 'z': 0}
+2024-08-25 15:47:37,663 - INFO - Processing location: {'x': 1650, 'y': 300, 'z': 0}
+2024-08-25 15:47:37,663 - INFO - Starting move action for {'x': 1650, 'y': 300, 'z': 0}
+2024-08-25 15:47:52,678 - WARNING - Process timed out for {'x': 1650, 'y': 300, 'z': 0} with action move
+2024-08-25 15:47:52,684 - INFO - Move action completed for {'x': 1650, 'y': 300, 'z': 0}
+2024-08-25 15:47:52,684 - INFO - Starting photo action for {'x': 1650, 'y': 300, 'z': 0}
+2024-08-25 15:48:07,686 - WARNING - Process timed out for {'x': 1650, 'y': 300, 'z': 0} with action photo
+2024-08-25 15:48:07,688 - INFO - Photo action completed for {'x': 1650, 'y': 300, 'z': 0}
+2024-08-25 15:48:07,688 - INFO - Processing location: {'x': 1950, 'y': 700, 'z': 0}
+2024-08-25 15:48:07,688 - INFO - Starting move action for {'x': 1950, 'y': 700, 'z': 0}
+2024-08-25 15:48:22,694 - WARNING - Process timed out for {'x': 1950, 'y': 700, 'z': 0} with action move
+2024-08-25 15:48:22,702 - INFO - Move action completed for {'x': 1950, 'y': 700, 'z': 0}
+2024-08-25 15:48:22,703 - INFO - Starting photo action for {'x': 1950, 'y': 700, 'z': 0}
+2024-08-25 15:48:37,710 - WARNING - Process timed out for {'x': 1950, 'y': 700, 'z': 0} with action photo
+2024-08-25 15:48:37,711 - INFO - Photo action completed for {'x': 1950, 'y': 700, 'z': 0}
+2024-08-25 15:48:37,711 - INFO - Processing location: {'x': 1550, 'y': 1100, 'z': 0}
+2024-08-25 15:48:37,711 - INFO - Starting move action for {'x': 1550, 'y': 1100, 'z': 0}
+2024-08-25 15:48:52,721 - WARNING - Process timed out for {'x': 1550, 'y': 1100, 'z': 0} with action move
+2024-08-25 15:48:52,739 - INFO - Move action completed for {'x': 1550, 'y': 1100, 'z': 0}
+2024-08-25 15:48:52,739 - INFO - Starting photo action for {'x': 1550, 'y': 1100, 'z': 0}
+2024-08-25 15:49:07,756 - WARNING - Process timed out for {'x': 1550, 'y': 1100, 'z': 0} with action photo
+2024-08-25 15:49:07,766 - INFO - Photo action completed for {'x': 1550, 'y': 1100, 'z': 0}
+2024-08-25 15:49:07,766 - INFO - Plant photography process completed
