@@ -1,2 +1,0 @@
-*/5 * * * * /app/run_daily_tasks.sh
-
